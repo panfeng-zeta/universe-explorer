@@ -1,0 +1,46 @@
+UNIVERSE EXPLORER — DATA & ASSET CREDITS
+
+Three.js 0.180.0, MIT License. Copyright Three.js authors.
+See /vendor/THREE-LICENSE.txt. Source https://threejs.org/
+
+PLANET DATA (rounded educational values)
+NASA/JPL Solar System Dynamics:
+https://ssd.jpl.nasa.gov/planets/phys_par.html
+https://ssd.jpl.nasa.gov/planets/approx_pos.html
+https://ssd.jpl.nasa.gov/sats/phys_par/
+https://ssd.jpl.nasa.gov/astro_par.html
+NASA NSSDC planetary/satellite factsheets:
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/
+
+FLIGHT MODEL
+Ideal heliocentric Hohmann transfer between circular coplanar orbits.
+Educational reference:
+https://www.jpl.nasa.gov/edu/resources/lesson-plan/lets-go-to-mars-calculating-launch-windows/
+
+TEXTURES
+Sun, Mercury, Venus atmosphere, Saturn, Uranus, Neptune, Earth and Earth clouds:
+Solar System Scope / INOVE, CC BY 4.0.
+Original: https://www.solarsystemscope.com/textures/
+License: https://creativecommons.org/licenses/by/4.0/
+Unmodified source pixels, rendered with 3D lighting and color adjustment.
+Earth distributed in Three.js examples: https://threejs.org/examples/textures/planets/earth_day_4096.jpg
+Other Solar System Scope files mirrored by TanvirAhmedArnab/SolarSystem:
+https://github.com/TanvirAhmedArnab/SolarSystem/blob/main/Docs/Legal/ThirdPartyAssets.md
+Earth clouds: Solar System Scope 2k_earth_clouds.jpg, via the same credited mirror.
+
+Moon: NASA Scientific Visualization Studio, CGI Moon Kit.
+https://svs.gsfc.nasa.gov/4720/
+https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_2k.jpg
+
+Mars: Viking / NASA / JPL / USGS, cylindrical planetary map.
+https://maps.jpl.nasa.gov/tmaps/mars.html
+https://maps.jpl.nasa.gov/tmaps/pix/mar0kuu2.jpg
+
+Jupiter: NASA/JPL/Space Science Institute, Cassini cylindrical map PIA07782.
+https://science.nasa.gov/photojournal/cassinis-best-maps-of-jupiter-cylindrical-map/
+
+Saturn: Solar System Scope 2k_saturn.jpg, CC BY 4.0, via the same credited mirror.
+
+Other moons use simple illustrative colors, not surface maps.
+Stars, atmospheric glow, rings, and trajectories are illustrative 3D geometry/shaders.
+All scale, model and motion limitations are available in the in-app guide.
