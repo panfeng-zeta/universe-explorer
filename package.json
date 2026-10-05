@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/serve.mjs",
-    "test": "node --test tests/*.test.mjs"
+    "dev": "node scripts/prepare-offline.mjs && node scripts/serve.mjs",
+    "prepare:offline": "node scripts/prepare-offline.mjs",
+    "check:offline": "node scripts/prepare-offline.mjs --check",
+    "test": "node scripts/prepare-offline.mjs --check && node --test tests/*.test.mjs"
   }
 }

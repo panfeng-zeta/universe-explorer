@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "星际漫游 · Universe Explorer",
+  "short_name": "星际漫游",
+  "description": "中英日三语太阳系探索器。八颗行星、二十颗卫星与太空飞行课堂。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#091116",
+  "background_color": "#080f14",
+  "icons": [
+    { "src": "./app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

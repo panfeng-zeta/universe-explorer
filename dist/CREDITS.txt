@@ -2,6 +2,8 @@ UNIVERSE EXPLORER — DATA & ASSET CREDITS
 
 Three.js 0.180.0, MIT License. Copyright Three.js authors.
 See /vendor/THREE-LICENSE.txt. Source https://threejs.org/
+OrbitControls import path changed to a relative local module for subdirectory hosting.
+Fonts use the operating system's installed fonts; no font service is contacted.
 
 PLANET DATA (rounded educational values)
 NASA/JPL Solar System Dynamics:
@@ -11,6 +13,31 @@ https://ssd.jpl.nasa.gov/sats/phys_par/
 https://ssd.jpl.nasa.gov/astro_par.html
 NASA NSSDC planetary/satellite factsheets:
 https://nssdc.gsfc.nasa.gov/planetary/factsheet/
+
+ROTATION AND AXIAL TILT
+Positive sidereal period magnitudes with full 0-180 degree obliquity; the
+tilt already encodes retrograde spin for Venus and Uranus (no double reversal).
+NASA planet factsheets and definitions:
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/fact_notes.html
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html
+Sun: representative 609.12 h at about 16 degrees latitude; differential rotation
+is not modeled. Giant planets use representative internal rotation periods.
+Saturn: 10 h 33 m 38 s, Cassini ring-seismology estimate (2019):
+https://www.jpl.nasa.gov/news/scientists-finally-know-what-time-it-is-on-saturn/
+Uranus: 17 h 14 m 52 s, Hubble estimate (2025):
+https://science.nasa.gov/missions/hubble/hubble-helps-determine-uranus-rotation-rate-with-unprecedented-precision/
+All 20 selected moons use ideal synchronous spin based on NASA factsheets:
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/uraniansatfact.html
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptuniansatfact.html
+Satellite poles are simplified to zero tilt, with no libration or calibrated
+surface longitude. Axial azimuths and initial orientations are illustrative.
+Sunlight direction is modeled, but inverse-square brightness, shadows/eclipses,
+ring illumination and differential atmospheric rotation are not modeled.
 
 FLIGHT MODEL
 Ideal heliocentric Hohmann transfer between circular coplanar orbits.

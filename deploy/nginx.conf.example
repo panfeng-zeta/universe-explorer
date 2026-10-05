@@ -1,0 +1,33 @@
+# Example dedicated HTTPS host. Adapt paths and domain to your existing server.
+# Keep the standard `include /etc/nginx/mime.types;` in the http {} context.
+server {
+    listen 80;
+    server_name universe.example.com;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name universe.example.com;
+    ssl_certificate     /etc/letsencrypt/live/universe.example.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/universe.example.com/privkey.pem;
+    root /var/www/universe/dist;
+    index index.html;
+    charset utf-8;
+
+    # Stable filenames: revalidate so new releases do not mix old and new files.
+    add_header Cache-Control "no-cache" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "no-referrer" always;
+
+    location = /manifest.webmanifest {
+        types { }
+        default_type application/manifest+json;
+    }
+    location / {
+        try_files $uri $uri/ =404;
+    }
+    location ~ /\. {
+        deny all;
+    }
+}
